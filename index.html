@@ -9,12 +9,17 @@
 
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
         <link rel="icon" href="favicon.png" type="image">
+        <!-- Place favicon.ico in the root directory -->
 
-        <link rel="stylesheet" type="text/css" href="css/jquery.multiscroll.css" />
         <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/font-awesome.css">
         <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/bootstrap-theme.css">
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/font-awesome.css">
         <link rel="stylesheet" href="css/index.css">
+        <link id="mobileCSS" rel="stylesheet" type="text/css" href="">
+
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
     <body>
@@ -22,177 +27,232 @@
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-        <!-- Site content starts here -->
+        <nav class="navbar navbar-fixed-top website-header-navbar">
+            <div class="container-fluid header-container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand about-link header-logo" href="#">
+                        Vineet Arora
+                    </a>
 
-
-        <div class="header" id="headerMenu">
-            <div class="primary-button header-button-outside header-button-resume-download">
-                <a href="resume.pdf" download="Vineet Arora's Resume" title="Download Resume">
-                    <div class="header-button-inside">
-                        Resume
-                    </div>
-                </a>
-            </div>
-            <div class="header-button-outside">
-                <a href="#contact">
-                    <div class="header-button-inside">
-                        Contact
-                    </div>
-                </a>
-            </div>
-            <div class="header-button-outside">
-                <a href="#works">
-                    <div class="header-button-inside">
-                        Work
-                    </div>
-                </a>
-            </div>
-            <div class="header-button-outside">
-                <a href="#about">
-                    <div class="header-button-inside">
-                        Home
-                    </div>
-                </a>
-            </div>
-        </div>
-
-        <div id="multiscroll">
-            <div class="ms-left">
-                <div class="ms-section about-section-left" data-anchor="about">
-                    <div class="photo-container">
-                        <img class="my-photo" src="images/me.jpg" alt="">
-                    </div>
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#my-portfolio-navbar-collapse" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
                 </div>
+                <div class="collapse navbar-collapse" id="my-portfolio-navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right custom-navbar-right">
+                        <li><a href="#" class="works-link">Works</a></li>
+                        <li><a href="#" class="contact-link">Contact</a></li>
 
-                <div class="ms-section works-section-left" data-anchor="works">
-                    <div class="first-full-width-work" style="background-color: #1081de;">
-                        <div class="overlay-rectangle"></div>
-                        <div class="project-div first-project-div" style="background-image: url(images/buysell.jpg);">
-                            <a href="https://medium.com/@vineetarora.iit/how-we-redesigned-buy-sell-90326289b82b#.fiovo2glp">
-                                <div class="project-title first-project-title">
-                                    Buy and Sell
-                                </div>
-                                <div class="project-subtitle">
-                                    e-commerce application of IIT Roorkee
-                                </div>
-                            </a>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div>
+        </nav>
+
+        <section class="about">
+            <div class="jumbotron">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4 col-md-offset-2 col-sm-6">
+                            <img src="img/me.png" alt="" class="img-responsive hidden-xs"> <!-- Responsive link A -->
                         </div>
 
-                    </div>
-                    <div class="two-half-width-works">
-                        <div class="project-div" style="background-color: #007D6C;;">
-                            <a href="https://www.behance.net/gallery/33850798/IMG-Recruitment-2016-Website-Design" target="_blank">
-                                <div class="project-title">
-                                    IMG Recruiting
-                                </div>
-                                <div class="project-subtitle">
-                                    Recruitment 2016 website
-                                </div>
-                            </a>
-                        </div>
-                        <div class="project-div" style=" background-color: #BF8446; background-image: url(images/gg.JPG); ">
-                            <a href="https://issuu.com/geekgazette2" target="_blank">
-                                <div class="project-title">
-                                    Geek Gazette
-                                </div>
-                                <div class="project-subtitle">
-                                    Technical magazine of IIT Roorkee
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="see-all-works-div">
-                        <div>
-                            <a href="https://behance.net/vineetarora1994" target="_blank">
-                                <div class="primary-button see-all-projects-button">
-                                    View Behance Portfolio
-                                </div>
-                            </a>
+                        <div class="col-md-4 col-sm-6 hello-intro">
+                            <h1>Hello!</h1>
+                            <h2>I'm Vineet Arora</h2>
+                            <p>
+                                I’m an undergradaute student at Indian Institute of Technology Roorkee. A UI/ UX Designer by passion, I design as well as write frontend code for my projects.
+                            </p>
+                            <a class="btn btn-primary btn-lg" href="VineetAroraResume.pdf" role="button" download>Download Resume</a>
                         </div>
                     </div>
                 </div>
+            </div>
+        </section>
 
-                <div class="ms-section contact-section-left" data-anchor="contact">
-                    <div class="photo-container">
-                            <img class="contact-photo" src="images/contact.jpg" alt="">
-                            <div class="social-links-outer">
-                                <div class="social-links">
-                                    <a href="https://www.facebook.com/vineetarora1994" class="social-link" target="_blank">
-                                        <i class="fa fa-facebook"></i>
-                                    </a>
-                                    <a href="https://twitter.com/vineetarora94" class="social-link" target="_blank">
-                                        <i class="fa fa-twitter"></i>
-                                    </a>
-                                    <a href="https://www.linkedin.com/in/vineetarora94" class="social-link" target="_blank">
-                                        <i class="fa fa-linkedin"></i>
-                                    </a>
-                                </div>
+        <section class="skills">
+            <div class="container" id="size-reference-container">
+                <div class="col-md-8 col-md-offset-2">
+                    <div class="skills-and-interests">
+                        <div class="row">
+                            <h1 class="text-center">Skills and Interests</h1>
+                            <p class="text-center">I’m driven by the belief of keeping things in order. So, my favorite pastime is devising ways to improve my lifestyle. Symmetry is my best friend. I’m driven by the belief of keeping things in order. So, my favorite pastime is devising ways to improve my lifestyle. Symmetry is my best friend.</p>
+                        </div>
+                        <div class="row skill-icons">
+                            <div class="col-xs-2">
+                                <img class="img-responsive" title= "Adobe Illustrator" src="img/skill-icons/illustrator.png" alt="">
                             </div>
-                    </div>
-                </div>
-            </div>
+                            <div class="col-xs-2">
+                                <img class="img-responsive" title= "Adobe Photoshop" src="img/skill-icons/photoshop.png" alt="">
+                            </div>
+                            <div class="col-xs-2">
+                                <img class="img-responsive" title= "Corel Draw" src="img/skill-icons/corel.png" alt="">
+                            </div>
+                            <div class="col-xs-2">
+                                <img class="img-responsive" title= "HTML5/CSS" src="img/skill-icons/html.png" alt="">
+                            </div>
+                            <div class="col-xs-2">
+                                <img class="img-responsive" title= "Bootstrap" src="img/skill-icons/bootstrap.png" alt="">
+                            </div>
+                            <div class="col-xs-2">
+                                <img class="img-responsive" title= "MS Office" src="img/skill-icons/msoffice.png" alt="">
+                            </div>
+                            
 
-            <div class="ms-right">
-
-                <div class="ms-section about-section-right" data-anchor="about">
-                    <div class="right-section-content">
-                        <div class="section-content-title">
-                            <h1 class="my-name">Vineet Arora</h1>
-                        </div>
-                        <div class="section-content-subtitle">
-                            <h4>
-                                UI/UX/Graphic Designer | Frontend Developer
-                            </h4>
-                        </div>
-                        <div class="section-content-text">
-                            <p>
-                                A UI/UX designer by passion, I am an undergraduate student at Indian Institute of Technology, Roorkee. I design as well as code the frontend templates for my projects.
-                            </p>
-                        </div>
-                    </div>
-
-                </div>
-
-                <div class="ms-section works-section-right" data-anchor="works">
-                    <div class="right-section-content">
-                        <div class="section-content-title">
-                            <h1 class="my-name">
-                                My Works
-                            </h1>
-                        </div>
-                        <div class="section-content-text">
-                            <p>
-                                I work with a team of 50 people to maintain the official website of Indian Institute of Technology Roorkee and to design and develop intranet applications for campus intranet.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="ms-section contact-section-right" data-anchor="contact">
-                    <div class="right-section-content">
-                        <div class="section-content-title">
-                            <h1 class="my-name">
-                                Contact me
-                            </h1>
-                        </div>
-                        <div class="section-content-text">
-                            <p>
-                                I’m currently looking for summer internship. Would love to hear from you.
-                            </p>
-                        </div>
-                        <div class="mail-me-button-div">
-                            <a href="mailto:vineetarora1994@gmail.com" class="mail-me-button" target="_blank">Drop a mail</a>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
+        <section class="works">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h1 class="text-center">Work</h1>
+                        <p class="text-center works-main-paragraph">At IIT Roorkee, I have been involved in various campus groups as a designer and have worked on diverse projects ranging from product design, website design, illustration design and frontend development.</p>
+                    </div>
+                </div>
+
+
+
+                <div class="row works-case-study">
+                    <div class="col-md-4 col-sm-6 col-md-offset-2">
+                        <h2 class="mobile-screen-work-heading visible-xs-block">Buy Sell portal</h2> <!-- Responsive link B1 -->
+                        <img class="img-responsive" src="img/work/buysell.jpg" alt="">
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <h2 class="hidden-xs"> <!-- Responsive link B2 -->
+                            Buy Sell portal
+                        </h2>
+                        <p>
+                            Buy Sell is the intranet E-commerce portal of IIT Roorkee. Redesigning this portal was my first project as a web designer.
+                        </p>
+                        <a href="https://medium.com/@vineetarora1994/how-we-redesigned-buy-sell-90326289b82b" class="btn btn-primary" target="_blank">Read full story</a>
+                    </div>
+                </div>
+                
+
+                <!-- div class="row works-case-study">
+                    <div class="col-md-4 col-md-offset-2">
+                        <h2 class=" hidden-xs">Buy and Sell</h2> <!-- Responsive link C1 --''>
+                        <p class="hidden-xs"> <!-- Responsive link C2 --''>
+                            Buy Sell is the intranet E-commerce portal of IIT Roorkee. Redesigning this portal was my first project as a web designer.
+                        </p>
+                        <a href="" class="btn btn-primary hidden-xs">Read full story</a>  <!-- Responsive link C3 --''>
+                    </div>
+                    <div class="col-md-4">
+                       <h2 class="mobile-screen-work-heading visible-xs-block">
+                            Buy Sell
+                        </h2>
+                       <img class="img-responsive" src="img/skill-icons/photoshop.JPG" alt="">
+                       
+                        <p class="visible-xs-block">
+                            Buy Sell is the intranet E-commerce portal of IIT Roorkee. Redesigning this portal was my first project as a web designer.
+                        </p>
+                        <a href="" class="btn btn-primary visible-xs-inline-block">Read full story</a>
+                    </div>
+                </div -->
+                
+
+                <div class="row works-case-study">
+                    <div class="col-md-4 col-sm-6 col-md-offset-2">
+                        <h2 class="mobile-screen-work-heading visible-xs-block">IMG recruitment website</h2>
+                        <img class="img-responsive" src="img/work/imgwebsite.jpg" alt="">
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <h2 class="hidden-xs">
+                            IMG recruitment website
+                        </h2>
+                        <p>
+                            IMG (Information Management Group) is a students' group in IIT Roorkee. This website had been designed to publicize the recruitment week of IMG.
+                        </p>
+                        <a href="https://www.behance.net/gallery/33850798/IMG-Recruitment-2016-Website-Design" class="btn btn-primary" target="_blank">View on Behance</a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <p class="text-center behance-link-para">
+                            And there are more to see. You can view them on my 
+                            <a href="https://www.behance.net/vineetarora1994" class="" target="_blank">
+                                <b class="behance-profile-link">Behance profile.</b>
+                            </a>
+                        </p>
+                    </div>
+                </div>
+
+
+
+
+
+            </div>
+        </section>
+
+        <section class="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h1 class="text-center">
+                            Let's talk!
+                        </h1>
+                        <p class="text-center">
+                            I’m presently looking for a full time job in UI/UX design.
+                            <br>
+                            Would love to hear from you.
+                        </p>
+                        <div class="row">
+                            <div class="col-md-4 col-md-offset-4 col-xs-6 col-xs-offset-3">
+                                <a href="mailto:vineetarora1994@gmail.com" class="btn btn-primary btn-lg center-block">Drop a mail</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- div class="row social-icons">
+                    <div class="col-md-1 col-md-offset-4 col-sm-1 col-sm-offset-4 col-xs-3">
+                        <a href="" class="center-block social-icon">
+                            <i class="fa fa-facebook"></i>
+                        </a>
+                    </div>
+                    <div class="col-md-1 col-sm-1 col-xs-3">
+                        <div class="center-block social-icon">
+                            <i class="fa fa-facebook"></i>
+                        </div>
+                    </div>
+                    <div class="col-md-1 col-sm-1 col-xs-3">
+                        <div class="center-block social-icon">
+                            <i class="fa fa-facebook"></i>
+                        </div>
+                    </div>
+                    <div class="col-md-1 col-sm-1 col-xs-3">
+                        <div class="center-block social-icon">
+                            <i class="fa fa-facebook"></i>
+                        </div>
+                    </div>
+                </div -->
+                <div class="or-you-can-follow-me-on">
+                    Or you can follow me on 
+                    <a href="https://medium.com/@vineetarora1994/" target="_blank">Medium</a>, 
+                    <a href="https://www.facebook.com/vineetarora1994" target="_blank">Facebook</a>, 
+                    <a href="https://twitter.com/vineetarora94" target="_blank">Twitter</a>, 
+                    <a href="https://www.behance.net/vineetarora1994" target="_blank">Behance</a> or 
+                    <a href="https://www.linkedin.com/in/vineetarora94" target="_blank">Linkedin</a>
+                </div>
+            </div>
+
+            <div class="container-fluid bottom-line">
+                <img class="pikaboo-footer-image-hands" src="img/pikaboo-hands.png">
+                <div class="bottom-white-overlay"></div>
+                <img class="pikaboo-footer-image-face" src="img/pikaboo-face.png">
+            </div>
+
+        </section>
+
+        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
-        <script type="text/javascript" src="js/vendor/jquery-ui.js"></script>
-        <script type="text/javascript" src="js/jquery.multiscroll.js"></script>
-
+        <script src="js/bootstrap.js"></script>
         <script src="js/main.js"></script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->

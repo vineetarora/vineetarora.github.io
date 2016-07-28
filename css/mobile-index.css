@@ -1,0 +1,63 @@
+.hello-intro
+{
+	text-align: center;
+}
+
+
+.hello-intro .btn-primary
+{
+	margin-bottom: 36px;
+}
+
+
+
+.skills-and-interests h1
+{
+	margin-top: 36px;
+}
+
+.skills-and-interests .skill-icons
+{
+	margin-bottom: 72px;
+}
+
+.works
+{
+	text-align: center;
+}
+
+.works h1
+{
+	margin-top: 60px;
+}
+
+.works .works-case-study
+{
+	margin-top: 24px;
+}
+
+.works-case-study img
+{
+	height: auto;
+}
+
+h2.mobile-screen-work-heading
+{
+	margin-top: 0;
+	margin-bottom: 24px;
+}
+
+.works-case-study .btn-primary
+{
+	margin-bottom: 36px;
+}
+
+.works-case-study:last-child .btn-primary
+{
+	margin-bottom: 72px;
+}
+
+.behance-link-para
+{
+	margin-top: 24px;
+}
