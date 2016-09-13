@@ -1,0 +1,476 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Buy and Sell</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <link rel="icon" href="../favicon.png" type="image">
+        <!-- Place favicon.ico in the root directory -->
+
+        <link rel="stylesheet" href="../css/normalize.css">
+        <link rel="stylesheet" href="../css/main.css">
+        <link rel="stylesheet" href="../css/bootstrap.css">
+        <link rel="stylesheet" href="../css/bootstrap-theme.css">
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="../css/font-awesome.css">
+        <link rel="stylesheet" href="../css/index.css">
+        <link id="mobileCSS" rel="stylesheet" type="text/css" href="">
+
+        <script src="../js/vendor/modernizr-2.8.3.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <nav class="navbar navbar-fixed-top website-header-navbar">
+            <div class="container-fluid header-container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand about-link header-logo" href="https://vineetarora.github.io">
+                        Vineet Arora
+                    </a>
+
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#my-portfolio-navbar-collapse" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse" id="my-portfolio-navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right custom-navbar-right">
+                        <li><a href="https://vineetarora.github.io" class="works-link">Home</a></li>
+                        <li><a href="#contact" class="contact-link">Contact</a></li>
+
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div>
+        </nav>
+        
+        <section class="work-story">
+
+            <div class="work-story-cover-div">
+                <div class="container-fluid">
+                    <div class="row">
+                        <img src="../img/work-stories/buysell/cover.png" class="img-responsive work-story-cover">
+                    </div>
+                </div>
+                <div class="container work-story-container work-story-title-container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h1>How "Buy Sell" was redesigned</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container work-story-container">
+                <div class="row">
+                    <div class="col-md-12">
+                       
+
+
+                        
+                        <p>
+                            Buy Sell is the intranet e-commerce website of the Indian Institute of Technology Roorkee. It is one the many apps created and maintained by the Information Management Group (IMG). Two years ago, when I joined IMG out of my interest to learn web designing, “Buy Sell Redesign” was the first project I was assigned.
+                        </p>
+                        
+                        <p>
+                            The purpose of “Buy Sell” was simple. You want to sell something, put it up for sale; You want to buy something, look up in the items for sale or drop a request for it. So, this app was an attempt to promote the reuse of products by connecting those who did not need stuff anymore (mostly the final year students) to those who needed to buy new (especially freshers).
+                        </p>
+
+                        
+                        <h1>The Earlier design</h1>
+                        <p>
+                            After being assigned the project, my first step was to go through the existing web app. It looked somewhat like this.
+                        </p>
+
+                        <div class="image">
+                            <img src="../img/work-stories/buysell/old_design_home.png">
+                            <p class="caption">
+                                Earlier Design of “Buy Sell”
+                            </p>
+                        </div>
+
+                        <p>
+                            It contained five major sections in all.
+                            <br>
+                            <strong>Buy</strong>: A page to view existing items for sale
+                            <br>
+                            <strong>Sell</strong>: A page to add an item for sale
+                            <br>
+                            <strong>Request</strong>: A page to add a request for an item
+                            <br>
+                            <strong>View Requests</strong>: A page to view existing requests for items
+                            <br>
+                            <strong>My Account</strong>: A page to review my account
+                        </p>
+
+
+
+                        <h1>Problems with the earlier design</h1>
+
+                        <p>
+                            Although the earlier design seemed simple enough to serve its purpose, it had some basic design flaws and had a lot of scope for improvement on various aspects.
+                        </p>
+
+
+                        <h3>
+                            Problem in Navigational Hierarchy
+                        </h3>
+
+                        <p>
+                            Out of the five sections, the app had, <strong>Buy</strong> and <strong>View Requests</strong> were of the same kind. Both of them were the pages to scroll through existing entities on the app. Whereas, the pages <strong>Sell</strong> and <strong>Request</strong> were intended to perform actions: to add entities to the app. And <strong>My Account</strong> was one of its kind related to none of these. All these pages had been placed at the same level in the navigation.
+                        </p>
+
+
+                        <h3>
+                            Search was not simple
+                        </h3>
+
+                        <p>
+                            As the app contained both the items for sale and the requests, keeping a global search bar in the header meant that the user had to specify first what category he/she would like to search in. So the user had the option to select from a drop-down whether to “search to buy” or to “search to view requests”. This increased the effort on the user’s side.
+                        </p>
+
+
+                        <h3>
+                            The mysterious “Send Mail” buttons on home page
+                        </h3>
+
+                        <p>
+                            Although the application enabled the user to send mail to the owner of the item with a request to buy it, the action was so prominently spread across the homepage that every item had a “Send mail to the owner” button below it. Further, the user did not get to know the content of the mail being sent to the owner.
+                        </p>
+
+
+                        <h3>
+                            Need for a better user interface
+                        </h3>
+
+                        <p>
+                            Buy Sell had been serving its purpose for almost three years then, but with the advent of different e-commerce websites and evolving designs, there was a need for a better look.
+                        </p>
+
+
+
+
+                        <h1>
+                            How we addressed these problems
+                        </h1>
+
+                        <p>
+                            Being continuously mentored by my seniors, I went through every problem one at a time and came up with these solutions.
+                        </p>
+
+                        <h3>
+                            Restructuring the navigation
+                        </h3>
+
+                        <p>
+                            The navigation was adjusted so that like entities were clubbed together. <strong>Items for sale</strong> and <strong>Requests</strong> were placed in the left sidebar. <strong>Sell</strong> and <strong>Request</strong> action buttons were placed together in the header. And <strong>My Account</strong> was placed in the drop-down that opens when a user clicks on his/her image.
+                        </p>
+
+                        <h3>
+                            Making our Search Box smarter
+                        </h3>
+
+                        <p>
+                            The search was converted to Live Search and it returned the results from Items for Sale and Requests at the same time. Not only this, it also returned results from filtering categories. For example typing “<strong>bi</strong>” in the search box will return the categories <strong>Bicycles</strong>, <strong>Mobile Accessories</strong> along with different results from <strong>Items for Sale</strong> and <strong>Requests</strong>.
+                        </p>
+
+                        <div class="image">
+                            <img src="../img/work-stories/buysell/smart_search.gif">
+                            <p class="caption"></p>
+                        </div>
+
+                        <h3>
+                            Making “Send Mail” a transparent process
+                        </h3>
+
+                        <p>
+                            The method of sending the mail was changed. Now, once the user clicked on an item, a modal popped up to show details about it which also contained a button to inquire about it. Clicking this button expanded the modal to show the mail that was being sent to the owner of the item. This contributed to the transparency of the connections being built through the app.
+                        </p>
+
+                        <div class="image">
+                            <img src="../img/work-stories/buysell/send_mail.png">
+                            <p class="caption">Making the “Send Mail” process transparent</p>
+                        </div>
+
+                       
+
+
+                        <h1>New Features</h1>
+
+                        <p>
+                            Apart from fixing the problems that already existed in the app, we introduced some new features too.
+                        </p>
+
+                        <h3>
+                            1. Watch: A feature to get notified
+                        </h3>
+
+                        <p>
+                            The user could now choose to <strong>Watch</strong> a specific category of objects and would receive a notification email whenever an item or request was added to that category.
+                        </p>
+
+                        <div class="image">
+                            <img src="../img/work-stories/buysell/watch.png">
+                            <p class="caption">Watch button to get notified</p>
+                        </div>
+
+                        <p>
+                            And the user could manage the <strong>watched categories</strong>, all at once from <strong>My Account</strong> page.
+                        </p>
+
+                    
+                        <div class="image">
+                            <img src="../img/work-stories/buysell/manage_watched.png">
+                        </div>
+
+                        <h3>
+                            2. Price Filter
+                        </h3>
+
+                        <p>
+                            A price filter is a necessary feature for any buy and sell portal and hence was necessary to be added.
+                        </p>
+
+                        <div class="image">
+                            <img src="../img/work-stories/buysell/price_filter.png">
+                            <p class="caption">Price Filter for Buy Sell</p>
+                        </div>
+
+                        <h3>
+                            3. Phone Number Privacy
+                        </h3>
+
+                        <p>
+                            For the users who didn’t want to display their phone numbers against the items or requests they added, there now existed a button to hide its visibility.
+                        </p>
+
+                        <div class="image">
+                            <img src="../img/work-stories/buysell/phone_privacy.gif">
+                            <p class="caption">Feature to show or hide your phone number</p>
+                        </div>
+
+                        <h1>
+                            And, of course, the new logo
+                        </h1>
+
+                        <p>
+                            Till now, <strong>Buy Sell</strong> did not have its logo. So designing a new logo was one of the most engaging (and enjoyable) tasks. Inspired by shopping cart icon after extensive googling, I came up with this logo and it was appreciated.
+                        </p>
+
+                        <div class="image">
+                            <img src="../img/work-stories/buysell/logo.png">
+                            <p class="caption">The new logo for Buy Sell</p>
+                        </div>
+
+                        <h1>
+                            Choosing the right fonts and colors
+                        </h1>
+
+                        <p>
+                            When it came to designing the user interface, choosing the right font and colors was critical for the app.
+                        </p>
+
+                        <h3>
+                            Font
+                        </h3>
+
+                        <p>
+                            For an e-commerce portal like <strong>Buy Sell</strong> where the users had to quickly skim through many items and choose one for themselves, the font needed to be beautifully legible. It had to look modern as well as elegant. Keeping this in mind, I tried many fonts and finally, <strong>Open Sans</strong> stood out from the rest.
+                        </p>
+
+
+                        <div class="image">
+                            <img src="../img/work-stories/buysell/typography.png">
+                            <p class="caption">Open Sans font</p>
+                        </div>
+
+                        <p>
+                            And it being free and open source made it all the more desirable.
+                        </p>
+
+                        <h3>
+                            The colors
+                        </h3>
+
+                        <p>
+                            The colors needed to provide a professional look and also give a dynamic outlook. So the color palette chosen was this:
+                        </p>
+
+                        <div class="image">
+                            <img src="../img/work-stories/buysell/colors.png">
+                            <p class="caption">Color palette for Buy Sell</p>
+                        </div>
+
+                        <p>
+                            Blue being a symbol of trust was chosen as the primary color whereas orange was used specifically for the action buttons (Sell and Request). Light grey was chosen for the background and dark blue shaded grey for the text.
+                        </p>
+
+
+                        <h1>
+                            Mistakes made and the lessons learnt
+                        </h1>
+
+                        <p>
+                            Although it goes without saying,
+                        </p>
+
+                        <p class="highlighted-text">
+                            No design is flawless. It is just a well thought out solution to the problem at hand and may become flawed some day.
+                        </p>
+
+                        <p>
+                            And given the fact that <strong>Buy Sell</strong> was my first project, there were many mistakes made and many lessons learnt.
+                        </p>
+
+                        <h3>
+                            1. Redesign can’t be imposed
+                        </h3>
+
+                        <p>
+                            Not all existing users like a change in the design of the app they have been using. They need to be motivated to go with the trend. With the launch of the new <strong>Buy Sell</strong>, there needed to be some kind of tutorial for the users who visited the new design for the first time. This was where we did not provide an adequate learning experience. Nevertheless, the new design’s simplicity made it easy to learn and we did not face any complaint or drop in the number of users.
+                        </p>
+
+                        <h3>
+                            2. Promotion too is equally important
+                        </h3>
+
+                        <p>
+                            The new design was supposed to dramatically increase the reach of the application to the new users. But even two weeks after the launch of the new application, I could spot many people who did not know that the new <strong>Buy Sell</strong> had been launched. One of the reasons was that the only method of promotion used was a post from the facebook page of IMG. There needed to be posters on the hostel notice boards and in the lecture halls which we did not ensure.
+                        </p>
+
+
+                        <h3>
+                            3. Going step by step speeds it up
+                        </h3>
+
+                        <p>
+                            With the launch deadline approaching near, I started coding the front end of the application even before the user interface was completely finalized. This in one way helped me develop a lot of front end development skills as most of the iterations were done not in Illustrator but in the chrome inspector. However, the overall process was delayed as iterating in the code took longer than iterating in Illustrator. Also, it led to a lack of proper communication between me and the back-end developer. Now, whenever I design an app, I finalize at least all the wire-frames and the user flow so that I as well as the back-end developer have a clear idea of what the app is finally going to be.
+                        </p>
+
+
+
+
+
+                        <h1>
+                            And the life goes on
+                        </h1>
+
+                        <p>
+                            <strong>Buy Sell</strong> <em>(or better say IMG)</em> taught me many lessons. Being my first project, it introduced me to a new work culture where I actually forgot the difference between day and night. To a person who knew no more than the full form of HTML when he joined IMG, this project proved to be a launchpad for many skills. On my way, I learnt Adobe Illustrator, HTML, CSS, Jquery, Git and the most important of all: Googling out the solutions to my problems on my own.
+                        </p>
+
+                        <p>
+                            I’m pretty sure that this design too would become redundant some day and another junior will have a chance to develop his/her design skills. Meanwhile, I keep googling, keep learning and, of course, keep designing.
+                        </p>
+
+
+
+
+
+
+
+
+                       <p class="end-of-story">
+                                ...
+                       </p>
+                       
+
+
+
+
+
+
+
+
+
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h1 class="text-center">
+                            Let's talk!
+                        </h1>
+                        <p class="text-center">
+                            I’m presently looking for a full time job in UI/UX design.
+                            <br>
+                            Would love to hear from you.
+                        </p>
+                        <div class="row">
+                            <div class="col-md-4 col-md-offset-4 col-xs-6 col-xs-offset-3">
+                                <a title="vineetarora1994@gmail.com" href="mailto:vineetarora1994@gmail.com" class="btn btn-primary btn-lg center-block">Drop a mail</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- div class="row social-icons">
+                    <div class="col-md-1 col-md-offset-4 col-sm-1 col-sm-offset-4 col-xs-3">
+                        <a href="" class="center-block social-icon">
+                            <i class="fa fa-facebook"></i>
+                        </a>
+                    </div>
+                    <div class="col-md-1 col-sm-1 col-xs-3">
+                        <div class="center-block social-icon">
+                            <i class="fa fa-facebook"></i>
+                        </div>
+                    </div>
+                    <div class="col-md-1 col-sm-1 col-xs-3">
+                        <div class="center-block social-icon">
+                            <i class="fa fa-facebook"></i>
+                        </div>
+                    </div>
+                    <div class="col-md-1 col-sm-1 col-xs-3">
+                        <div class="center-block social-icon">
+                            <i class="fa fa-facebook"></i>
+                        </div>
+                    </div>
+                </div -->
+                <div class="or-you-can-follow-me-on">
+                    Or you can follow me on 
+                    <a href="https://medium.com/@vineetarora1994/" target="_blank">Medium</a>, 
+                    <a href="https://dribbble.com/vineetarora1994" target="_blank">Dribbble</a>, 
+                    <a href="https://www.facebook.com/vineetarora1994" target="_blank">Facebook</a>, 
+                    <a href="https://twitter.com/vineetarora94" target="_blank">Twitter</a>, 
+                    <a href="https://www.behance.net/vineetarora1994" target="_blank">Behance</a> or 
+                    <a href="https://www.linkedin.com/in/vineetarora94" target="_blank">Linkedin</a>
+                </div>
+            </div>
+
+            <div class="container-fluid bottom-line">
+                <img class="pikaboo-footer-image-hands" src="../img/pikaboo-hands.png">
+                <div class="bottom-white-overlay"></div>
+                <img class="pikaboo-footer-image-face" src="../img/pikaboo-face.png">
+            </div>
+
+        </section>
+
+        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <script>window.jQuery || document.write('<script src="../js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
+        <script src="../js/plugins.js"></script>
+        <script src="../js/bootstrap.js"></script>
+        <script src="../js/main.js"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='https://www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+        </script>
+    </body>
+</html>
