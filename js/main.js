@@ -83,20 +83,32 @@ $(document).ready
 
 	},
 	cssChanger()
+
 );
 
 window.onresize= function()
 {
 	cssChanger();
+
 }
 
 
 
 function cssChanger()
-{
-	if($("#size-reference-container").width() < 720)
+{			
+
+	if($(".website-header-navbar").width() < 720)
 	{
-		 $('link[id="mobileCSS"]').attr('href','css/mobile-index.css');
+		var page_url = window.location.href;
+		if(page_url.includes("/work/"))
+		{
+			$('link[id="mobileCSS"]').attr('href','../css/mobile-index.css');
+		}
+		else
+		{
+			$('link[id="mobileCSS"]').attr('href','css/mobile-index.css');
+		}
+
 	}
 
 	else

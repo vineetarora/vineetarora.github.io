@@ -61,3 +61,22 @@ h2.mobile-screen-work-heading
 {
 	margin-top: 24px;
 }
+
+
+/*Work Stories CSS starts here*/
+
+.work-story-cover-div .work-story-title-container
+{
+	margin-top: 0;
+	margin-bottom: -84px;
+}
+
+.work-story-cover-div  .work-story-title-container h1
+{
+	color: #243538;
+}
+
+.work-story-container p
+{
+	font-size: 18px;
+}
