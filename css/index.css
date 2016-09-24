@@ -399,7 +399,32 @@ span.icon-bar {
 
 
 
-/*CSS of Works' pages starts here*/
+
+
+/*CSS of work page images starts here*/
+
+.work-page-images
+{
+    margin-top: 48px;
+}
+
+.work-page-images .container-fluid
+{
+    padding: 0;
+}
+
+.work-page-images img
+{
+    margin: 0;
+}
+
+/*CSS of work page images ends here*/
+
+
+
+
+
+/*CSS of Work stories' pages starts here*/
 
 .work-story-cover-div
 {
