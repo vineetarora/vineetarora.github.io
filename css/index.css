@@ -257,6 +257,11 @@ span.icon-bar {
     margin-top: 3px;
 }
 
+.works-case-study .mobile-open-work-button
+{
+    display: none;
+}
+
 .behance-link-para
 {
     margin: 48px auto;

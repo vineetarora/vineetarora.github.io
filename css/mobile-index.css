@@ -52,6 +52,11 @@ h2.mobile-screen-work-heading
 	margin-bottom: 36px;
 }
 
+.works-case-study .mobile-open-work-button
+{
+	display: block;
+}
+
 .works-case-study:last-child .btn-primary
 {
 	margin-bottom: 72px;
