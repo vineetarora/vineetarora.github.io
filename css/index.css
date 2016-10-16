@@ -408,9 +408,17 @@ span.icon-bar {
 
 /*CSS of work page images starts here*/
 
+.work-page-images-collective-background
+{
+    display: table;
+    margin: auto;
+    padding: 0;
+    box-shadow: 0 0 12px #ccc;
+}
+
 .work-page-images
 {
-    margin-top: 48px;
+    margin-top: 108px;
 }
 
 .work-page-images .container-fluid
@@ -420,7 +428,8 @@ span.icon-bar {
 
 .work-page-images img
 {
-    margin: 0 auto;
+    margin: 0;
+    width: 100%;
 }
 
 p.work-page-images-paragraph
