@@ -402,8 +402,24 @@ span.icon-bar {
     top:-18px;
 }
 
+#back-to-top
+{
+    position: fixed;
+    bottom: 36px;
+    right: 36px;
+    background-color: #f1f1f1;
+    padding: 24px;
+    border-radius: 100%;
+    box-shadow: 1px 1px 6px rgba(0,0,0,0.2);
+    opacity: 0;
+}
 
-
+#back-to-top:hover
+{
+    background-color: #fff;
+    padding: 25px;
+    box-shadow: 3px 3px 12px rgba(0,0,0,0.2);
+}
 
 
 /*CSS of work page images starts here*/

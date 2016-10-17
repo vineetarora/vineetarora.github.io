@@ -81,6 +81,27 @@ $(document).ready
 			}
 		);
 
+
+		$('#back-to-top').each(function(){
+		    $(this).click(function(){ 
+		        $('html,body').animate({ scrollTop: 0 }, 'slow');
+		        return false; 
+		    });
+		});
+
+		$(window).scroll(function()
+			{
+				if($(window).scrollTop()>500)
+				{
+					$('#back-to-top').css("opacity","1");
+				}
+				else
+				{
+					$('#back-to-top').css("opacity","0");
+				}
+			}
+		);
+
 	},
 	cssChanger()
 
