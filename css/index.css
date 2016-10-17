@@ -418,8 +418,18 @@ span.icon-bar {
 
 .work-page-images
 {
-    margin-top: 108px;
+    margin-top: 48px;
 }
+
+
+@media only screen and (min-width: 1400px)
+{
+    .work-page-images
+    {
+        margin-top: 108px;
+    }
+}
+
 
 .work-page-images .container-fluid
 {
