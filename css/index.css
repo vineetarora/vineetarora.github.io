@@ -302,6 +302,7 @@ span.icon-bar {
 {
     background-color: #ff8d00;
     color: #ffffff;
+    font-weight: bold;
 }
 
 .contact .btn-primary:hover
