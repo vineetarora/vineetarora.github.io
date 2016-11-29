@@ -69,6 +69,7 @@ a, a:focus, a:hover
 .website-header-navbar a:hover
 {
     color: #000;
+    cursor: pointer;
 }
 
 .navbar-collapse
