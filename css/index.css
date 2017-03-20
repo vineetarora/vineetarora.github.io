@@ -488,6 +488,11 @@ p.work-page-images-paragraph
     color: #fff;
 }
 
+.work-story-cover-div  .work-story-title-container h1.dark-title
+{
+    color: #243538;
+}
+
 .work-story-cover
 {
     width: 100%;
